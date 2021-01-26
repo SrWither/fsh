@@ -18,8 +18,6 @@ grayColour="\e[0;37m\033[1m"
 . BANNER.sh
 . NVIM.sh
 
-PATH=$PATH:/bin
-
 trap ctrl_c INT
 
 ctrl_c() {
@@ -49,5 +47,4 @@ shell() {
     done
 }
 
-BANNER
 shell
