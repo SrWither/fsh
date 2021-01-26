@@ -10,6 +10,7 @@ purpleColour="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
+. SU.sh
 . wine.sh
 . CD.sh
 . MKDIR.sh
@@ -34,7 +35,8 @@ shell() {
             nvim ) NEOVIM;;
             secretway ) echo "SecretWay Suuuuuuu"; shell;;
             pwd ) pwd;;
-            help ) echo "Lista de comandos: ls, pwd, cd, exit, nvim, wine, lsc, mkdir, clear"; shell;;
+            su ) SU;;
+            help ) echo "Lista de comandos: ls, pwd, su, cd, exit, nvim, wine, lsc, mkdir, clear"; shell;;
             cd ) CD;;
             lsc ) LSC;;
             mkdir ) MakeDirectory;;
@@ -47,4 +49,5 @@ shell() {
     done
 }
 
+BANNER
 shell
