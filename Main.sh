@@ -16,7 +16,6 @@ grayColour="\e[0;37m\033[1m"
 . MKDIR.sh
 . RM.sh
 . LSC.sh
-. BANNER.sh
 . NVIM.sh
 
 trap ctrl_c INT
@@ -49,5 +48,4 @@ shell() {
     done
 }
 
-BANNER
 shell
